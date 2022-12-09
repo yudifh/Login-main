@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <app-logo></app-logo> -->
+  <h1>Sign IN</h1>
+  <form>
+    <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Username</ion-label>
+          <ion-input type="text" [(ngModel)]="email_address" name="email_address"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="text" [(ngModel)]="password" name="password"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" shape="round" color="success" (click)="tryLogin()">Sign in</ion-button>
+    </ion-list>
+  </form>
+</ion-content>
